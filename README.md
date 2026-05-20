@@ -1,4 +1,4 @@
-# Digit Recognizer
+# Reconhecimento de Dígitos Manuscritos — Rede Neural com 98% de Acurácia
 
 Solução para a competição [Digit Recognizer](https://www.kaggle.com/competitions/digit-recognizer) do Kaggle.
 
