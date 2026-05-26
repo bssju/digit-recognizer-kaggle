@@ -18,7 +18,7 @@ Solução para a competição [Digit Recognizer](https://www.kaggle.com/competit
 
 ```
 digit-recognizer-kaggle/
-├── digit_recognizer_julianaburato.ipynb
+├── reconhecimento_digitos_manuscritos.ipynb
 ├── README.md
 └── submission.csv
 ```
@@ -83,6 +83,19 @@ Input (28×28×1) → Flatten (784)
 - Acurácia no Kaggle: **98.089%**
 - Matriz de confusão e relatório de classificação por dígito
 - Visualização dos exemplos onde o modelo errou
+
+---
+
+## Conclusão
+
+O modelo MLP treinado com Data Augmentation atingiu **98,089% de acurácia** no Kaggle, demonstrando que redes neurais densas são suficientes para classificar dígitos manuscritos com alto desempenho, sem necessidade de arquiteturas convolucionais.
+
+Os principais fatores que contribuíram para o resultado:
+
+- **Data Augmentation:** geração de variações sintéticas reduziu o overfitting e melhorou a generalização
+- **BatchNormalization:** estabilizou o treino e acelerou a convergência
+- **Dropout decrescente:** regularização adequada em cada camada sem penalizar demais as representações mais abstratas
+- **EarlyStopping + ReduceLROnPlateau:** evitaram overfitting e ajustaram o learning rate automaticamente
 
 ---
 
